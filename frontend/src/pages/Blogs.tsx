@@ -9,7 +9,7 @@ import { useBlogs } from "../hooks";
 const Blogs = () => {
   const { loading, blogs } = useBlogs();
   console.log(blogs, 'bloooo');
-   const username = blogs.length > 0 ? blogs[0]?.author?.username : "Guest";
+  
 
   if (loading) {
     return (
@@ -26,7 +26,7 @@ const Blogs = () => {
 
   return (
     <div>
-      <Appbar username={username} />
+      <Appbar />
       <div className="w-full flex flex-col justify-center items-center gap-5 my-3">
       {blogs.slice().reverse().map((blog) => (
           <BlogCard
