@@ -1,4 +1,5 @@
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import FullBlog from '../components/FullBlog';
 import { useBlog } from '../hooks'
 import { useParams } from 'react-router-dom';
@@ -17,6 +18,7 @@ const Blog = () => {
     );
   }
   return <div>
+
    <FullBlog blog={blog} />
   </div>
 

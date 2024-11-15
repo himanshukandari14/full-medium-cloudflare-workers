@@ -1,9 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Routes, Route, Navigate } from 'react-router-dom';
+
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
-import Signup from './pages/SignUp';
+import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import Blog from './pages/Blog';
 import Blogs from './pages/Blogs';
